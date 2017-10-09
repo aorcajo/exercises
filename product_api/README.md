@@ -29,3 +29,12 @@ python3 app.py runserver
 ```
 
 The api will be accesible by default from http://127.0.0.1:5000/product
+
+## Docker
+
+Download and extract 'products.csv' and run:
+
+```
+docker build -t product_api ..
+docker run -d --name docker_api -p 80:80 product_api
+```
